@@ -1,0 +1,95 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: µVision V5.27.1.0
+Copyright (C) 2019 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: N/A N/A, N/A, LIC=65ILQ-NDKYL-114PY-II11G-JMC3R-NX9X7
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Plus  Version: 5.27.1.0
+Toolchain Path:  G:\Programs\KEIL\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 6 (build 750)
+Assembler:       Armasm.exe V5.06 update 6 (build 750)
+Linker/Locator:  ArmLink.exe V5.06 update 6 (build 750)
+Library Manager: ArmAr.exe V5.06 update 6 (build 750)
+Hex Converter:   FromElf.exe V5.06 update 6 (build 750)
+CPU DLL:         SARMCM3.DLL V5.27.1.0
+Dialog DLL:      DCM.DLL V1.17.2.0
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V3.0.6.0
+Dialog DLL:      TCM.DLL V1.36.1.0
+ 
+<h2>Project:</h2>
+G:\Ðîáî÷èé ñò³ë\Norm\Norm\MDK-ARM\Norm.uvprojx
+Project File Date:  10/09/2019
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 6 (build 750)', folder: 'G:\Programs\KEIL\ARM\ARMCC\Bin'
+Build target 'Norm'
+compiling main.c...
+..\User\main.c(24): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "uint8_t *"
+  		HAL_UART_Transmit_IT( &huart4, msg_0,(sizeof msg_0)/sizeof(char));
+..\User\main.c(27): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "uint8_t *"
+  	HAL_UART_Receive_IT(&huart4,unswere,(sizeof unswere)/sizeof(char));
+..\User\main.c(30): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "uint8_t *"
+  		HAL_UART_Transmit_IT( &huart4,unswere,(sizeof unswere)/sizeof(char)); 
+..\User\main.c(33): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "uint8_t *"
+  		HAL_UART_Transmit_IT( &huart4,new_line,(sizeof new_line)/sizeof(char)); 
+..\User\main.c(41): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "uint8_t *"
+  				HAL_UART_Transmit_IT( &huart4,msg_1,(sizeof msg_1)/sizeof(char)); 
+..\User\main.c(44): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "uint8_t *"
+  				HAL_UART_Receive_IT(&huart4,unswere,(sizeof unswere)/sizeof(char));
+..\User\main.c(47): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "uint8_t *"
+  				HAL_UART_Transmit_IT( &huart4,unswere,(sizeof unswere)/sizeof(char)); 
+..\User\main.c(50): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "uint8_t *"
+  				HAL_UART_Transmit_IT( &huart4,new_line,(sizeof new_line)/sizeof(char)); 
+..\User\main.c(66): warning:  #223-D: function "sprintf" declared implicitly
+  							sprintf(strr,"adc range - %04f  V\r\n",c);
+..\User\main.c(67): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "uint8_t *"
+  							HAL_UART_Transmit_IT( &huart4,strr,26); 
+..\User\main.c(55): warning:  #177-D: variable "str"  was declared but never referenced
+  							uint8_t str[]="r/n";
+..\User\main.c(84): warning:  #223-D: function "sprintf" declared implicitly
+  							sprintf(strr,"adc range - %04f  V\r\n",c);
+..\User\main.c(85): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "uint8_t *"
+  							HAL_UART_Transmit_IT( &huart4,strr,26); 
+..\User\main.c(73): warning:  #177-D: variable "str"  was declared but never referenced
+  							uint8_t str[]="r/n";
+..\User\main.c(39): warning:  #177-D: variable "two"  was declared but never referenced
+  				char two[]="2";
+..\User\main.c(92): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "uint8_t *"
+  				HAL_UART_Transmit_IT( &huart4,msg_2,(sizeof msg_2)/sizeof(char)); 
+..\User\main.c(21): warning:  #177-D: variable "l"  was declared but never referenced
+  		char l[]="l";
+..\User\main.c: 17 warnings, 0 errors
+linking...
+Program Size: Code=9300 RO-data=468 RW-data=16 ZI-data=1160  
+FromELF: creating hex file...
+"Norm\Norm.axf" - 0 Error(s), 17 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.5.6.0.pack
+                ARM.CMSIS.5.6.0
+                CMSIS (Cortex Microcontroller Software Interface Standard)
+   * Component: CORE Version: 5.3.0
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.STM32F4xx_DFP.2.14.0.pack
+                Keil.STM32F4xx_DFP.2.14.0
+                STMicroelectronics STM32F4 Series Device Support, Drivers and Examples
+
+<h2>Collection of Component include folders:</h2>
+  .\RTE\_Norm
+  G:\Programs\Arm123\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include
+  G:\Programs\Arm123\Packs\Keil\STM32F4xx_DFP\2.14.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:5.3.0
+Build Time Elapsed:  00:00:07
+</pre>
+</body>
+</html>
